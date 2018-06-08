@@ -1,0 +1,32 @@
+{
+    "family": "bwce-jms-basic",
+    "containerDefinitions": [
+        {
+            "image": "750037626691.dkr.ecr.us-east-1.amazonaws.com/jms-basic:latest",
+            "name": "bwce-jms-basic",
+            "cpu": 10,
+            "memory": 512,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 8080,
+                    "hostPort": 8088
+                }
+            ],
+            "environment": [
+                {
+                    "name": "BW_LOGLEVEL",
+                    "value": "ERROR"
+                }
+            ],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "bwce-app-log",
+                    "awslogs-region": "us-east-1",
+                    "awslogs-stream-prefix": "bwce"
+                }
+	    }
+        }
+    ]
+}
