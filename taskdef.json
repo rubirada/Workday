@@ -1,9 +1,9 @@
 {
-    "family": "bwce-Workday",
+    "family": "bwce-workday",
     "containerDefinitions": [
         {
-            "image": "750037626691.dkr.ecr.us-east-1.amazonaws.com/Workday:latest",
-            "name": "bwce-Workday",
+            "image": "750037626691.dkr.ecr.us-east-1.amazonaws.com/bwce-workday:latest",
+            "name": "bwce-workday",
             "cpu": 10,
             "memory": 512,
             "essential": true,
