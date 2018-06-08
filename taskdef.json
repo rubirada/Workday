@@ -1,9 +1,9 @@
 {
-    "family": "bwce-jms-basic",
+    "family": "bwce-Workday",
     "containerDefinitions": [
         {
-            "image": "750037626691.dkr.ecr.us-east-1.amazonaws.com/jms-basic:latest",
-            "name": "bwce-jms-basic",
+            "image": "750037626691.dkr.ecr.us-east-1.amazonaws.com/Workday:latest",
+            "name": "bwce-Workday",
             "cpu": 10,
             "memory": 512,
             "essential": true,
